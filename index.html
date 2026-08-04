@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sonar Trails — Jaisalmer Tours & Bookings</title>
+  <meta name="description" content="Jaisalmer ke golden fort, sand dunes aur desert camps ke curated tours. Book karein aur Sonar Trails ke saath commission kamayein." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Sonar <span>Trails</span></a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#tours">Tours</a>
+        <a href="#commission">Commission</a>
+        <a href="#booking">Book</a>
+        <a href="#blogs">Blogs</a>
+        <a class="nav-cta" href="#booking">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1800&q=80"
+        alt="Jaisalmer Golden Fort at dusk"
+        width="1800"
+        height="1200"
+      />
+    </div>
+    <div class="container hero-content">
+      <p class="hero-brand">Sonar <em>Trails</em></p>
+      <h1>Jaisalmer ke sonahre raaston pe aapki booking, aapki commission.</h1>
+      <p>Fort walks, camel safaris aur desert nights — curated packages book karao, leads WhatsApp pe confirm karo, aur har booking se commission kamao.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#booking">Tour Book Karein</a>
+        <a class="btn btn-ghost" href="#tours">Packages Dekhein</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tours">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Curated packages</span>
+        <h2>Teen trails, ek golden city</h2>
+        <p>Har package local guides, hotel/camp pickup aur transparent commission ke saath aata hai — taaki aap sirf booking pe focus kar sako.</p>
+      </div>
+
+      <div class="tours-grid">
+        <article class="tour">
+          <div class="tour-visual">
+            <img src="https://images.unsplash.com/photo-1606293459339-aa5d34a7d85b?auto=format&fit=crop&w=1000&q=80" alt="Jaisalmer fort lanes" width="1000" height="700" />
+          </div>
+          <div class="tour-body">
+            <p class="tour-meta">1 Day · City & Fort</p>
+            <h3>Golden Fort Day</h3>
+            <p>Sonar Qila, Patwon ki Haveli, Gadisar Lake aur sunset viewpoint — ek din mein Jaisalmer ki soul.</p>
+            <div class="tour-price">
+              <strong>₹2,499</strong>
+              <span>per person</span>
+              <span class="commission-tag">Aapki cut ~12%</span>
+            </div>
+            <a class="btn btn-primary" href="#booking?package=Golden%20Fort%20Day" onclick="document.getElementById('package').value='Golden Fort Day'">Is package ko book karein</a>
+          </div>
+        </article>
+
+        <article class="tour">
+          <div class="tour-visual">
+            <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=1000&q=80" alt="Thar desert sand dunes" width="1000" height="700" />
+          </div>
+          <div class="tour-body">
+            <p class="tour-meta">1N / 2D · Desert</p>
+            <h3>Desert Overnight</h3>
+            <p>Sam dunes camel safari, Rajasthani dinner, folk music aur starry camp stay — Thar ka classic night.</p>
+            <div class="tour-price">
+              <strong>₹4,999</strong>
+              <span>per person</span>
+              <span class="commission-tag">Aapki cut ~15%</span>
+            </div>
+            <a class="btn btn-primary" href="#booking" onclick="document.getElementById('package').value='Desert Overnight'">Is package ko book karein</a>
+          </div>
+        </article>
+
+        <article class="tour">
+          <div class="tour-visual">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1000&q=80" alt="Rajasthan heritage architecture" width="1000" height="700" />
+          </div>
+          <div class="tour-body">
+            <p class="tour-meta">3 Days · Best seller</p>
+            <h3>3-Day Heritage</h3>
+            <p>Fort + havelis + dunes + Kuldhara ghost village + private transfer — honeymoon aur family dono ke liye.</p>
+            <div class="tour-price">
+              <strong>₹12,999</strong>
+              <span>per person</span>
+              <span class="commission-tag">Aapki cut ~18%</span>
+            </div>
+            <a class="btn btn-primary" href="#booking" onclick="document.getElementById('package').value='3-Day Heritage'">Is package ko book karein</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="commission" id="commission">
+    <div class="container">
+      <div>
+        <h2>Bookings lo, commission kamao</h2>
+        <p>Sonar Trails aapka Jaisalmer booking desk hai. Form se lead aati hai, WhatsApp pe confirm hoti hai, aur har closed tour pe aapko package ke hisaab se commission milti hai. LocalStorage pe aapki booking ledger bhi save rehti hai.</p>
+        <a class="btn btn-primary" href="#booking">Pehli booking shuru karein</a>
+      </div>
+      <div class="rate-list" aria-label="Commission rates">
+        <div class="rate-item"><span>Golden Fort Day</span><strong>12%</strong></div>
+        <div class="rate-item"><span>Desert Overnight</span><strong>15%</strong></div>
+        <div class="rate-item"><span>3-Day Heritage</span><strong>18%</strong></div>
+        <div class="rate-item"><span>Custom Private</span><strong>20%</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section booking" id="booking">
+    <div class="container booking-layout">
+      <div class="booking-copy">
+        <span class="eyebrow" style="color:var(--teal);font-size:0.75rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;display:block;margin-bottom:0.65rem;">Booking desk</span>
+        <h2>Guest details bharo — baaki WhatsApp handle karega</h2>
+        <p>Form submit hote hi booking ID generate hoti hai, estimated commission dikhti hai, aur aapke business WhatsApp pe pre-filled message open hota hai.</p>
+        <ul class="booking-points">
+          <li>Instant booking ID + local ledger (browser pe)</li>
+          <li>Package-wise commission auto-calculate</li>
+          <li>WhatsApp pe guest se confirm — bina heavy CRM ke</li>
+        </ul>
+      </div>
+
+      <form class="booking-form" id="booking-form" data-whatsapp="919876543210">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Guest name</label>
+            <input id="name" name="name" type="text" required placeholder="Rahul Sharma" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" required placeholder="98XXXXXXXX" autocomplete="tel" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="guest@email.com" autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Delhi / Mumbai / ..." />
+          </div>
+          <div class="field full">
+            <label for="package">Package</label>
+            <select id="package" name="package" required>
+              <option value="Golden Fort Day">Golden Fort Day — ₹2,499</option>
+              <option value="Desert Overnight">Desert Overnight — ₹4,999</option>
+              <option value="3-Day Heritage" selected>3-Day Heritage — ₹12,999</option>
+              <option value="Custom Private">Custom Private — Quote</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="date">Travel date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div class="field">
+            <label for="travelers">Travelers</label>
+            <input id="travelers" name="travelers" type="number" min="1" max="20" value="2" required />
+          </div>
+          <div class="field full">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" placeholder="Pickup point, special requests, honeymoon setup..."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-teal" type="submit">Booking Submit + WhatsApp</button>
+          <p class="form-note">Apna WhatsApp number <code>index.html</code> form ke <code>data-whatsapp</code> attribute mein daal dena (country code ke saath, bina +).</p>
+        </div>
+        <div class="form-success" id="form-success" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="blogs">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Travel journal</span>
+        <h2>Paanch blogs jo bookings badhayein</h2>
+        <p>SEO-friendly guides — share karo WhatsApp pe, traffic lao, phir isi page se booking close karo.</p>
+      </div>
+
+      <div class="blogs-grid">
+        <article class="blog-feature">
+          <div class="blog-visual">
+            <a href="blogs/best-time-to-visit-jaisalmer.html">
+              <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80" alt="Jaisalmer in golden light" width="1200" height="800" />
+            </a>
+          </div>
+          <div>
+            <p class="blog-tag">Season guide</p>
+            <h3><a href="blogs/best-time-to-visit-jaisalmer.html">Jaisalmer kab jaayein? Best months, weather aur crowds</a></h3>
+            <p>October se March tak golden window — desert camps, fort festivals aur budget tips.</p>
+            <a class="read-link" href="blogs/best-time-to-visit-jaisalmer.html">Poora padhein →</a>
+          </div>
+        </article>
+
+        <article class="blog-item">
+          <div class="blog-visual">
+            <a href="blogs/sonar-qila-guide.html">
+              <img src="https://images.unsplash.com/photo-1606293459339-aa5d34a7d85b?auto=format&fit=crop&w=800&q=80" alt="Inside Golden Fort" width="800" height="560" />
+            </a>
+          </div>
+          <p class="blog-tag">Heritage</p>
+          <h3><a href="blogs/sonar-qila-guide.html">Sonar Qila walk: tickets, timings, hidden corners</a></h3>
+          <p>Fort ke andar kya dekhna zaroori hai — aur sunset ke liye kahan khade hona chahiye.</p>
+          <a class="read-link" href="blogs/sonar-qila-guide.html">Poora padhein →</a>
+        </article>
+
+        <article class="blog-item">
+          <div class="blog-visual">
+            <a href="blogs/sam-sand-dunes-safari.html">
+              <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=800&q=80" alt="Camel safari on dunes" width="800" height="560" />
+            </a>
+          </div>
+          <p class="blog-tag">Desert</p>
+          <h3><a href="blogs/sam-sand-dunes-safari.html">Sam Sand Dunes camel safari: honest guide</a></h3>
+          <p>Camel vs jeep, camp types, bargaining — bina tourist trap ke desert night.</p>
+          <a class="read-link" href="blogs/sam-sand-dunes-safari.html">Poora padhein →</a>
+        </article>
+
+        <article class="blog-item">
+          <div class="blog-visual">
+            <a href="blogs/jaisalmer-food-havelis.html">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80" alt="Rajasthani thali" width="800" height="560" />
+            </a>
+          </div>
+          <p class="blog-tag">Stay & eat</p>
+          <h3><a href="blogs/jaisalmer-food-havelis.html">Haveli stays aur street food jo miss nahi karna</a></h3>
+          <p>Ker sangri se leke mirchi bada tak — aur fort-view heritage hotels.</p>
+          <a class="read-link" href="blogs/jaisalmer-food-havelis.html">Poora padhein →</a>
+        </article>
+
+        <article class="blog-item">
+          <div class="blog-visual">
+            <a href="blogs/3-day-jaisalmer-itinerary.html">
+              <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" alt="Desert road itinerary" width="800" height="560" />
+            </a>
+          </div>
+          <p class="blog-tag">Itinerary</p>
+          <h3><a href="blogs/3-day-jaisalmer-itinerary.html">Perfect 3-day Jaisalmer itinerary</a></h3>
+          <p>Day-by-day plan jo seedha hamare Heritage package se match karta hai.</p>
+          <a class="read-link" href="blogs/3-day-jaisalmer-itinerary.html">Poora padhein →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Sonar <span>Trails</span></p>
+          <p>Jaisalmer-focused tour desk — bookings, desert camps aur commission-friendly packages.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#booking">Book</a></li>
+            <li><a href="#commission">Commission</a></li>
+            <li><a href="blogs/index.html">All blogs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>Jaisalmer, Rajasthan</li>
+            <li>WhatsApp: +91 98765 43210</li>
+            <li>hello@sonartrails.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sonar Trails. Golden city, honest bookings.</span>
+        <span>Commission rates package pe depend karti hain.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
