@@ -36,6 +36,19 @@
 
   const success = document.getElementById("form-success");
   const packageSelect = document.getElementById("package");
+  const dateInput = document.getElementById("date");
+
+  // Disallow past travel dates
+  if (dateInput) {
+    const today = new Date();
+    const iso = today.toISOString().slice(0, 10);
+    dateInput.min = iso;
+    if (!dateInput.value) {
+      const soon = new Date(today);
+      soon.setDate(soon.getDate() + 14);
+      dateInput.value = soon.toISOString().slice(0, 10);
+    }
+  }
 
   // Prefill package from query string or hash
   const params = new URLSearchParams(window.location.search);

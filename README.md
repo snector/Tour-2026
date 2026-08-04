@@ -28,6 +28,14 @@ In `index.html`, update the form attribute:
 
 Use country code without `+`.
 
+## Images
+
+Local photos in `/assets` are from Wikimedia Commons (Jaisalmer Fort, Sam dunes, Thar camels, Rajasthani thali). Re-fetch with:
+
+```bash
+python3 scripts/fetch-assets.py
+```
+
 ## Commission rates
 
 | Package           | Rate |
